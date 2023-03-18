@@ -504,350 +504,58 @@ table {
 /* MANAGER */
 /* MANAGER */
 
-/* PARAMETRE PLUGIN */
-/* PARAMETRE PLUGIN */
-	.ParameterLoader{
-		display: flex;
-		justify-content: center;
-		margin: 35px;
-	}
-	.timeboard_container{
-		display: flex;
-		justify-content: space-around;
-		gap: 25px;
-	}
-	.horaire_title{
-		border-bottom: 2px solid #77b55a;
-		display: inline-block;
-		padding-bottom: 3px;
-		/* margin-bottom: 10px; */
-	}
-	.horaire_instruction{
-		font-size: 12px;
-		font-style: italic;
-		color: grey;
-		margin-top: 3px;
-		margin-bottom: 10px;
-	}
-	.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-	transform: scale(0.6);
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #77b55a;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #77b55a;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-.timecard_box{
-	border: 2px solid #77b55a;
-	border-radius: 5px;
-	position: relative;
-}
-.timeboard_box{
+/* Locker Plugin */
+/* Locker Plugin */
+.locker_container{
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-.timecard_box h2 {
-	margin-left: 5px;
-	font-size: 15px;
-}
-.timeboard_side{
-	flex: 1;
-	display: flex;
-	flex-direction:column;
-	gap: 25px
-}
-.time_view{
-	margin: 10px;
-	border-top: 2px solid #77b55a;
-	padding-top: 10px;
-}
-.time_view_container{
-	display: flex;
-}
-.time_view_box{
-	flex: 1;
-	display: flex;
+	justify-content: flex-start;
 	flex-direction: column;
-	justify-content: space-between;
-}
-.time_config{
-	display: flex;
-	margin-top: 10px;
-}
-.time_config input{
-	width: 20px;
-	border-radius: 5px;
-	border-top: 1px solid white;
-	border-right: 1px solid white;
-	border-left: 1px solid white;
-	border-bottom: 2px solid #77b55a;
-}
-.time_view h3{
-	font-size: 13px;
-}
-.time_view span{
-	font-style: italic;
-	color: grey;
-	font-size: 11px;
-	margin-left: 3px;
-}
-.time_tiret{
-	margin-left: 15px;
-	margin-right: 15px;
-}
-.time_dualpoint{
-	margin-left: 5px;
-	margin-right: 5px;
-}
-.scdt{
-	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+	position: relative;
+	align-items: flex-start;
 }
-.timeline_saver{
-	display: flex;
-	justify-content: flex-end;
-	margin-top: 10px;
+.enc_locker{
+	position: relative;
+	width: 85px;
+	height: 85px;
 }
-.parameter_modal_zone{
-	position: fixed;
-	z-index: 100;
+
+.enc_locker img{
+	width: 100%;
+	height: 100%;
+}
+.add_locker_container{
+	position: absolute;
 	top: 0;
 	left: 0;
-	border: 1px solid red;
-}
-.param_mc{
-	height: 100vh;
-	width: 100vw;
-}
-.param_mc_zone{
-	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: 120px;
-	width: 100%;
-	height: 100vh;
+	background: rgba(0, 0, 0, 0.5)
 }
-.zone_container{
-	display: flex;
-	gap: 25px;
-	justify-content: space-between;
-}
-.cedex_box{
-	border: 2px solid #77b55a;
-	border-radius: 5px;
+.add_locker_form{
+	background: white;
 	padding: 15px;
-	flex: 1;
+	border-radius: 5px;
+}
+.add_locker_line{
 	display: flex;
 	flex-direction: column;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.add_locker_btnline{
+	display: flex;
 	justify-content: space-between;
 }
-.cedex_title{
+.add_locker_zone{
 	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-end;
-	gap: 8px;
-	border-bottom: 2px solid #77b55a;
-padding-bottom: 5px;
+	justify-content: space-between;
 }
-.cedex_box p{
-	font-size: 14px;
-	color: grey;
-	font-style: italic;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-end;
-}
-.cedex_box span{
-	font-size: 11px;
-	margin-left: 3px;
-	transform: translateY(-1px);
-}
-.add_input_zone{
-	display: flex;
-	justify-content: center;
-	margin-top: 10px;
-}
-.add_input_button{
-	background: #77b55a;
-	border-radius: 100%;
-	display: flex;
+.add_lck{
 	cursor: pointer;
-	justify-content: center;
-	align-items: center;
-	height: 34px;
-	width: 34px;
 }
-.add_input_button p{
-	color: white;
-	font-weight: bold;
-	font-size: 28px;
-	font-style: normal;
-	transform: translateX(0.5px) translateY(-0.5px);
-}
-.input_zone_loader{
-	margin: 35px;
-	display: flex;
-	justify-content: center;
-}
-.zi_list_line{
-	display: flex;
-	position: relative;
-	border: 2px solid #77b55a;
-	border-radius: 3px;
-	margin-right: 5vw;
-	margin-left: 5vw;
-	margin-top: 10px;
-	gap: 3px;
-}
-.t1{
-	width: 50px;
-	padding: 3px 5px;
-	background: rgba(0, 0, 0, 0);
-	border: 1px solid rgba(255, 0, 0, 0);
-}
-.t2{
-	padding: 3px 5px;
-	border-top: 1px solid rgba(255, 0, 0, 0);
-	border-right: 1px solid rgba(255, 0, 0, 0);
-	border-bottom: 1px solid rgba(255, 0, 0, 0);
-	border-left: 1px solid #77b55a;
-	background: rgba(0, 0, 0, 0);
-	flex: 2;
-}
-.tcl{
-	width: 100%;
-	display: flex;
-	margin-top: 5px;
-	justify-content: center;
-}
-.delete_cedex{
-	width: 20px;
-	height: 18px;
-	border-radius: 40px;
-	position: absolute;
-	right: -35px;
-	top: 3px;
-	cursor: pointer;
-	background: #CD431A;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.delete_cedex p{
-	color: white;
-	transform: translateX(-1.5px) translateY(-1.5px);
-	font-weight: bold;
-	font-size: 24px;
-}
-
-/* PARAMETRE PLUGIN */
-/* PARAMETRE PLUGIN */
-
-/* SERVICES PLUGIN */
-/* SERVICES PLUGIN */
-	.services_genre_board{
-		display: flex;
-		gap:5px;
-	}
-	.services_genre_choice{
-		padding: 5px 10px;
-		border-radius: 5px;
-		border: 2px solid #77b55a;
-		transition: all .3s ease-in-out;
-	}
-	.services_genre_choice:hover, .selected_genre_choice{
-		background: #77b55a;
-		color: white;
-		font-weight: bold;
-		cursor: pointer;
-	}
-	.services_genre_screen{
-		margin-top: 10px;
-		border-radius: 5px;
-		border: 2px solid #77b55a;
-		margin-bottom: 10px;
-	}
-	.services_screen_choice{
-		display: none;
-	}
-	.selected_screen_choice{
-		display: block;
-		padding: 5px;
-	}
-	.flx_right{
-		display: flex;
-		justify-content: flex-end;
-	}
-	.services_loader{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 55px;
-	}
-	.services_ariane{
-		display: flex;
-		align-items: center;
-		grid-gap: 2px;
-		font-size: 13px;
-		font-style: italic;
-		color: gray;
-	}
-/* SERVICES PLUGIN */
-/* SERVICES PLUGIN */
+/* Locker Plugin */
+/* Locker Plugin */

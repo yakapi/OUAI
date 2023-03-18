@@ -9,15 +9,13 @@ import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAds0jMnlQ-ioHjcVZzrfjvsxkspYg9EGI",
-  authDomain: "calendar-c499d.firebaseapp.com",
-  projectId: "calendar-c499d",
-  storageBucket: "calendar-c499d.appspot.com",
-  messagingSenderId: "503318095187",
-  appId: "1:503318095187:web:bdf769dd334a73e4e9eda6",
-  measurementId: "G-2X55LZ3QZQ"
+  apiKey: "AIzaSyApifkrGIvbD1RgbEnqq5Inn4mOyKFyg-U",
+  authDomain: "ouai-571d7.firebaseapp.com",
+  projectId: "ouai-571d7",
+  storageBucket: "ouai-571d7.appspot.com",
+  messagingSenderId: "570406285700",
+  appId: "1:570406285700:web:399d5d81103a173c34add1"
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
